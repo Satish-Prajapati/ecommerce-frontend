@@ -1,0 +1,380 @@
+body {
+	background: #ffffff;
+	font-family: "Montserrat", sans-serif;
+	/* font-family: 'Roboto', sans-serif; */
+}
+.a-style {
+	text-decoration: none !important;
+	color: #010101 !important;
+}
+
+.footer-black {
+	background: #111;
+	font-weight: 300;
+}
+.blog-title {
+	font-size: 35px;
+	line-height: 42px;
+	font-weight: 600;
+	color: #24262b;
+}
+
+.blog-text {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #878787;
+}
+
+.blog-card {
+	background: none;
+	border: none;
+}
+.blog-a {
+	font-size: 11px;
+	color: #3d3a3a;
+	letter-spacing: 4px;
+	font-family: "Roboto", sans-serif;
+	text-decoration: none;
+}
+.blog-a:hover {
+	color: #010101;
+}
+
+.card-head {
+	font-size: 12px;
+	color: #878787;
+}
+
+.temp-title {
+	font-size: 16px;
+	color: #3d3a3a;
+	letter-spacing: 8px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+#product-price {
+	font-size: 16px;
+	color: #3d3a3a;
+	letter-spacing: 2px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+
+.temp-text {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 300;
+	color: #878787;
+}
+
+.icon-size {
+	height: 50px;
+	width: auto;
+	fill: green;
+}
+.test {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 50px;
+}
+.product-title {
+	font-size: 18px;
+	font-weight: 500;
+	color: #000;
+	font-family: "Roboto", sans-serif;
+}
+
+.product-card {
+	background: none;
+	border: none;
+}
+.product-card:hover {
+	background: #f6f8f8;
+}
+
+.dark-btn {
+	background: #24262b;
+	color: white;
+}
+
+.dark-btn:hover {
+	background: #b79b6c;
+	color: white;
+}
+
+.title-lg {
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+}
+.title-sm {
+	font-size: 15px;
+	color: #3d3a3a;
+	letter-spacing: 8px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+
+.grey-bg {
+	background: #f1f6f7;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+.rm-p {
+	padding: 0px !important;
+}
+.img-fluid {
+	border-radius: 8px;
+}
+
+.caption {
+	position: absolute;
+	top: 70%;
+	left: 8%;
+	width: 80%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 50px;
+	letter-spacing: 10px;
+}
+.slider-cap {
+	position: absolute;
+	top: 40%;
+	width: 80%;
+	font-family: "Roboto", sans-serif;
+	font-weight: 900;
+	font-size: 100px;
+	line-height: 100px;
+	letter-spacing: 15px;
+}
+.slider-cap-left {
+	left: 12%;
+}
+.badge {
+	font-size: 16px !important;
+}
+
+.small-description {
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 400;
+	color: #000;
+}
+
+.social {
+	font-size: 18px;
+}
+.a-non {
+	text-decoration: none !important;
+	color: #010101 !important;
+}
+.a-non:hover {
+	color: #b89458 !important;
+}
+.fa-arr {
+	color: #3d3a3a;
+	font-size: 40px;
+}
+/* .slider-cap-right:hover {
+	color: #a1f9c4;
+} */
+
+.slider-cap-right {
+	left: 55%;
+}
+@media only screen and (max-width: 800px) {
+	.slider-cap {
+		font-size: 60px;
+		line-height: 60px;
+		letter-spacing: 5px;
+	}
+	.slider-cap-right {
+		left: 50%;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.slider-cap {
+		font-size: 45px;
+		line-height: 45px;
+		letter-spacing: 5px;
+	}
+	.slider-cap-right {
+		left: 50%;
+	}
+	.slider-cap {
+		top: 33%;
+	}
+	.caption {
+		font-size: 40px;
+		line-height: 40px;
+		letter-spacing: 8px;
+	}
+	.test {
+		font-weight: 500;
+		font-size: 40px;
+	}
+}
+
+.hov-col:hover {
+	color: #a1f9c4 !important;
+}
+
+.text-img {
+	position: relative;
+}
+.checked {
+	color: #b89458 !important;
+}
+.fa-star {
+	font-size: 20px;
+	color: #24262b;
+}
+/* .blog {
+	background: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/stockie_landing/assets/img/st__main_background-min.png) !important;
+} */
+
+.navbar-light .navbar-brand {
+	color: #3d3a3a;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+	color: #3d3a3a;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #3d3a3a;
+}
+
+.navbar-toggler {
+	background: #fff;
+}
+
+.navbar-nav {
+	text-align: center;
+}
+
+.nav-link {
+	padding: 0.2rem 1rem;
+}
+
+.nav-link.active,
+.nav-link:focus {
+	color: #fff;
+}
+
+.navbar-toggler {
+	padding: 1px 5px;
+	font-size: 18px;
+	line-height: 0.3;
+}
+
+.nav-link:hover {
+	color: #b89458 !important;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #3d3a3a;
+}
+
+/* ignore the code below */
+
+.link-area {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
+	padding: 15px;
+	border-radius: 40px;
+	background: tomato;
+}
+.link-area a {
+	text-decoration: none;
+	color: #3d3a3a;
+	font-size: 25px;
+}
+
+/* Product qua */
+.qty .count {
+	color: #000;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 30px;
+	padding: 0 2px;
+	min-width: 35px;
+	text-align: center;
+}
+.qty .plus {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	width: 30px;
+	height: 30px;
+	font: 30px/1 Arial, sans-serif;
+	text-align: center;
+	border-radius: 50%;
+}
+.qty .minus {
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	width: 30px;
+	height: 30px;
+	font: 30px/1 Arial, sans-serif;
+	text-align: center;
+	border-radius: 50%;
+	background-clip: padding-box;
+}
+/* div {
+	text-align: center;
+} */
+.minus:hover {
+	background-color: #717fe0 !important;
+}
+.plus:hover {
+	background-color: #717fe0 !important;
+}
+/*Prevent text selection*/
+span {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+input {
+	/* border: 0; */
+	width: 15%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input:disabled {
+	background-color: white;
+}
+
+.bc-icons-2 .breadcrumb-item + .breadcrumb-item::before {
+	content: none;
+}
+.bc-icons-2 .breadcrumb-item.active {
+	color: #455a64;
+}
+
+.countstl {
+	border: 0;
+}

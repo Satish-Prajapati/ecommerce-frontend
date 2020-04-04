@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome to KATANA</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.js"
+			integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<div id="nav_bar">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<div class="container">
+					<a class="navbar-brand" href="/index.html">KATANA</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link mx-lg-2" href="index.html">HOME</a>
+							</li>
+							<li class="nav-item mx-lg-2">
+								<a class="nav-link" href="#">PRODUCT</a>
+							</li>
+							<li class="nav-item mx-lg-2">
+								<a class="nav-link" href="#">ABOUT US</a>
+							</li>
+							<li class="nav-item mx-lg-2">
+								<a class="nav-link" href="#">CONTACT US</a>
+							</li>
+							<li class="nav-item mr-lg-5">
+								<a class="nav-link" href="cart.html"
+									><i class="fa fa-shopping-cart"
+										><span class="badge"><sup>0</sup></span></i
+									></a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div id="demo" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+				<li data-target="#demo" data-slide-to="0" class="active"></li>
+				<li data-target="#demo" data-slide-to="1"></li>
+				<!-- <li data-target="#demo" data-slide-to="2"></li> -->
+			</ul>
+
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img
+						src="images/slider/1.png"
+						alt="Los Angeles"
+						width="1100"
+						height="500"
+					/>
+					<div class="display-1 slider-cap slider-cap-left">
+						<p>
+							Lorem, <br />
+							ipsum.
+						</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img
+						src="images/slider/2.png"
+						alt="Chicago"
+						width="1100"
+						height="500"
+					/>
+					<div class="slider-cap slider-cap-right">
+						<p>
+							Lorem, <br />
+							ipsum.
+						</p>
+					</div>
+				</div>
+				<!-- <div class="carousel-item">
+					<img
+						src="https://www.radiustheme.com/demo/wordpress/themes/metro/wp-content/uploads/2020/02/hbg22-1536x670.jpg"
+						alt="New York"
+						width="1100"
+						height="500"
+					/>
+				</div> -->
+			</div>
+
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#demo" data-slide="prev">
+				<i class="fa fa-chevron-left fa-arr"></i>
+			</a>
+			<a class="carousel-control-next" href="#demo" data-slide="next">
+				<i class="fa fa-chevron-right fa-arr"></i>
+			</a>
+		</div>
+		<div class="blog mb-5">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-sm-8 col-10 mx-auto rm-p">
+						<div class="card blog-card m-1">
+							<a href="#" class="a-style hov-col">
+								<img
+									class="img-fluid"
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-7.jpg"
+									alt=""
+								/>
+								<div class="caption">
+									<p>HIM</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-8 col-10 mx-auto rm-p">
+						<div class="card blog-card m-1">
+							<a href="#" class="a-style hov-col">
+								<img
+									class="img-fluid"
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-8.jpg"
+									alt=""
+								/>
+								<div class="caption">
+									<p>HER</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-8 col-10 mx-auto rm-p">
+						<div class="card blog-card m-1">
+							<a href="#" class="a-style hov-col">
+								<img
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-9.jpg"
+									class="img-fluid"
+									alt=""
+								/>
+								<div class="caption">
+									<p>KIDS</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blog my-5" id="products">
+			<div class="container-fluid">
+				<div class="text-center mt-5 mb-4">
+					<p class="title-sm">BEST SELLER</p>
+				</div>
+				<div class="row text-center m-sm-auto">
+					<div class="col-lg-3 col-md-6 col-sm-10 mx-auto">
+						<a href="products/capri-nuvola.html" class="a-style">
+							<div class="card product-card p-1">
+								<img
+									class="card-img-top"
+									src="images/product/capri-nuvola/1.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<p class="product-title">
+										CAPRI NUVOLA
+									</p>
+									<p class="product-price">
+										248$
+									</p>
+									<a href="products/capri-nuvola.html"
+										><button class="btn btn-md dark-btn">
+											View Product
+										</button></a
+									>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-10 mx-auto">
+						<a href="products/capri-triple.html" class="a-style">
+							<div class="card product-card p-1">
+								<img
+									class="card-img-top"
+									src="images/product/capri-triple/1.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<p class="product-title">
+										CAPRI TRIPLE
+									</p>
+									<p class="product-price">
+										248$
+									</p>
+									<a href="products/capri-triple.html"
+										><button class="btn btn-md dark-btn">
+											View Product
+										</button></a
+									>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-10 mx-auto">
+						<a href="products/capri-perla.html" class="a-style">
+							<div class="card product-card p-1">
+								<img
+									class="card-img-top"
+									src="images/product/capri-perla/0.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<p class="product-title">
+										CAPRI PERLA
+									</p>
+									<p class="product-price">
+										248$
+									</p>
+									<a href="products/capri-perla.html"
+										><button class="btn btn-md dark-btn">
+											View Product
+										</button></a
+									>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-10 mx-auto">
+						<a href="products/capri-fiore.html" class="a-style">
+							<div class="card product-card p-1">
+								<img
+									class="card-img-top"
+									src="images/product/capri-fiore/1.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<p class="product-title">
+										CAPRI FIORE
+									</p>
+									<p class="product-price">
+										248$
+									</p>
+									<a href="products/capri-fiore.html"
+										><button class="btn btn-md dark-btn">
+											View Product
+										</button></a
+									>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-12 my-auto">
+					<h1 class="test pb-3 text-md-left text-center">
+						Lorem Ipsum Dolor Sit Amet Consectetur
+					</h1>
+				</div>
+				<div class="col-md-4 col-12 mx-auto">
+					<div>
+						<img
+							src="images/svg/box.svg"
+							class="card-img-top"
+							alt=""
+							height="300px"
+							width="auto"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="grey-bg py-4">
+			<div class="container">
+				<div class="text-center my-5">
+					<p class="title-sm">WHY SHOP WITH US</p>
+				</div>
+				<div class="row my-4">
+					<div class="col-md-4 col-sm-12 text-center">
+						<img src="images/svg/shipping.svg" alt="" class="icon-size" />
+						<p class="temp-title mt-4">FREE SHIPPING</p>
+						<p class="temp-text">World Wide Free Shipping</p>
+					</div>
+					<div class="col-md-4 col-sm-12 text-center">
+						<img src="images/svg/money.svg" alt="" class="icon-size" />
+						<p class="temp-title mt-4">MONEY BACK</p>
+						<p class="temp-text">30 Days Money Back Guarantee</p>
+					</div>
+					<div class="col-md-4 col-sm-12 text-center">
+						<img src="images/svg/support.svg" alt="" class="icon-size" />
+						<p class="temp-title mt-4">24H SUPPORT</p>
+						<p class="temp-text">Fast 24/7 Support</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blog my-5">
+			<div class="container">
+				<div class="text-center my-4">
+					<p class="title-sm">OUR BLOG</p>
+					<p class="title-lg">Latest Fashion Blog</p>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-12">
+						<a href="#" class="a-style">
+							<div class="card blog-card m-1">
+								<img
+									class="card-img-top"
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-9.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<div class="card-head mx-1">24.03.2020</div>
+									<h4 class="card-title blog-title">
+										State of Design
+									</h4>
+									<p class="card-text text-left blog-text">
+										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+										Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+										consequat ipsum, ...
+									</p>
+									<a href="#" class="blog-a">READ MORE</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<a href="#" class="a-style">
+							<div class="card blog-card m-1">
+								<img
+									class="card-img-top"
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-8.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<div class="card-head mx-1">24.03.2020</div>
+									<h4 class="card-title blog-title">
+										Learn From You
+									</h4>
+									<p class="card-text text-left blog-text">
+										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+										Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+										consequat ipsum, ...
+									</p>
+									<a href="#" class="blog-a">READ MORE</a>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<a href="#" class="a-style">
+							<div class="card blog-card m-1">
+								<img
+									class="card-img-top"
+									src="https://mane.qodeinteractive.com/wp-content/uploads/2017/12/blog-list-pic-7.jpg"
+									alt=""
+								/>
+								<div class="card-body px-1">
+									<div class="card-head mx-1">24.03.2020</div>
+									<h4 class="card-title blog-title">
+										Things You Know
+									</h4>
+									<p class="card-text text-left blog-text">
+										Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+										Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+										consequat ipsum, ...
+									</p>
+									<a href="#" class="blog-a">READ MORE</a>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div id="footer_component">
+			<footercomponent></footercomponent>
+		</div>
+		<!-- Footer -->
+		<script src="javascript/vue.js"></script>
+		<script src="javascript/script.js"></script>
+	</body>
+</html>

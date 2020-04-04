@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CAPRI PERLA</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.js"
+			integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
+		<link rel="stylesheet" href="../style/style.css" />
+	</head>
+	<body>
+		<div id="nav_bar">
+			<navcomponent></navcomponent>
+		</div>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb blue-grey lighten-4 mb-0 pl-md-5">
+				<li class="breadcrumb-item">
+					<a class="black-text a-non" href="../index.html">Home</a
+					><i class="fas fa-angle-double-right mx-2" aria-hidden="true"></i>
+				</li>
+				<li class="breadcrumb-item">
+					<a class="black-text a-non" href="#">Products</a
+					><i class="fas fa-angle-double-right mx-2" aria-hidden="true"></i>
+				</li>
+				<li class="breadcrumb-item active">Capri Perla</li>
+			</ol>
+		</nav>
+		<!-- Product Details -->
+		<div class="container pb-3">
+			<div class="row">
+				<div class="col-lg-6 col-12">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ul class="carousel-indicators">
+							<!-- <li data-target="#demo" data-slide-to="0" class="active"></li> -->
+							<img
+								src="../images/product/capri-perla/1.jpg"
+								height="50px"
+								width="auto"
+								alt=""
+								data-target="#demo"
+								data-slide-to="0"
+								class="active"
+							/>
+							<img
+								src="../images/product/capri-perla/2.jpg"
+								height="50px"
+								width="auto"
+								alt=""
+								data-target="#demo"
+								data-slide-to="1"
+								class="active"
+							/>
+							<img
+								src="../images/product/capri-perla/3.jpg"
+								height="50px"
+								width="auto"
+								alt=""
+								data-target="#demo"
+								data-slide-to="2"
+								class="active"
+							/>
+							<!-- <li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li> -->
+						</ul>
+
+						<!-- The slideshow -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img
+									src="../images/product/capri-perla/1.jpg"
+									alt="Capri Fiore"
+									width="1100"
+									height="500"
+									id="productImg"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="../images/product/capri-perla/2.jpg"
+									alt="Capri Fiore"
+									width="1100"
+									height="500"
+								/>
+							</div>
+							<div class="carousel-item">
+								<img
+									src="../images/product/capri-perla/3.jpg"
+									alt="Capri Fiore"
+									width="1100"
+									height="500"
+								/>
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<i class="fas fa-chevron-left fa-arr"></i>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<i class="fas fa-chevron-right fa-arr"></i>
+						</a>
+					</div>
+					<!-- <img
+						class="card-img-top"
+						src="https://cdn.shopify.com/s/files/1/0646/1285/products/Capri-Perla-1_91e8f126-fb1c-49f2-aca5-7e35b3fd48bb_1200x.progressive.png.jpg?v=1572634899"
+						alt=""
+					/> -->
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="mx-lg-5 my-lg-2 m-3">
+						<p class="test" id="product-name">CAPRI PERLA</p>
+						<div class="pb-3">
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star checked"></span>
+							<span class="fa fa-star"></span>
+						</div>
+						<p class="" id="product-price">248$</p>
+						<p class="text-left small-description">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+							Perspiciatis earum id molestiae consequatur saepe! Rem velit porro
+							pariatur vitae veniam totam ex repellendus, dolore odit vel
+							laborum sit illum.
+						</p>
+						<form>
+							<div class="form-group py-3">
+								<label for="sel1">SELECT SIZE</label>
+								<select class="form-control" id="sel1" name="size">
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+								</select>
+								<div class="qty pt-4 text-center">
+									<span class="minus bg-dark">-</span>
+									<input
+										type="number"
+										class="count countstl"
+										name="qty"
+										value="1"
+									/>
+									<span class="plus bg-dark">+</span>
+								</div>
+							</div>
+							<div id="cart-alert"></div>
+							<button id="cart" class="btn dark-btn w-100 py-3">
+								ADD TO CART
+							</button>
+						</form>
+
+						<div class="social py-4 text-center">
+							<a href="" class="mr-2 a-non"
+								><i class="fab fa-facebook-f"></i> Facebook</a
+							>
+							<a href="" class="mr-2 a-non"
+								><i class="fab fa-twitter"></i> Twitter</a
+							>
+							<a href="" class="a-non"
+								><i class="fab fa-whatsapp"></i> Whatsapp</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container py-1 px-4">
+			<div class="row">
+				<div class="col-md-8 col-12 my-auto">
+					<h1 class="test pb-3 text-md-left text-center">
+						Lorem Ipsum Dolor
+					</h1>
+					<p class="small-description text-left">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+						saepe non repellendus officiis laboriosam culpa, quae debitis illo!
+						Beatae molestiae quia, et voluptatum minus sunt fuga, pariatur optio
+						aspernatur repellat libero necessitatibus veniam ratione expedita
+						soluta quos placeat similique .
+					</p>
+				</div>
+				<div class="col-md-4 col-12 mx-auto">
+					<div>
+						<img src="../images/pro.gif" class="card-img-top" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container p-4 pt-5">
+			<div class="row">
+				<div class="col-md-8 col-12 mx-auto">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe
+							class="embed-responsive-item"
+							src="https://www.youtube.com/embed/70dewyADNZA"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="blog my-5" id="products">
+			<productcomponent></productcomponent>
+		</div>
+		<!-- Footer -->
+		<div id="footer_component">
+			<footercomponent></footercomponent>
+		</div>
+		<!-- Footer -->
+		<script src="../javascript/vue.js"></script>
+		<script src="../javascript/script.js"></script>
+		<script src="../javascript/addToCart.js"></script>
+	</body>
+</html>
