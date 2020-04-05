@@ -1,5 +1,6 @@
 # ecommerce-frontend
 A simple eCommerce frontend build with bootstrap and a little bit of vue.js
+
 You can add, update & delete products from cart.
 
 ### Running Application
