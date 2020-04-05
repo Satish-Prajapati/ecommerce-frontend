@@ -1,4 +1,4 @@
-//Function for calculating subtotal
+//Function for total price
 let cal = () => {
 	let total = 0;
 	cart.forEach((item) => {
@@ -7,7 +7,7 @@ let cal = () => {
 	return total;
 };
 
-//Function for generating cart html
+//Function for generating cart html with all products details
 const htmlgen = () => {
 	let gen;
 	let cartGen = document.getElementById("cartgen");
@@ -47,6 +47,7 @@ const htmlgen = () => {
 			
 		</div>`;
 		});
+		//Html for total price count
 		cartGen.innerHTML =
 			gen +
 			`<div class="text-right total pt-sm-3">
@@ -55,6 +56,7 @@ const htmlgen = () => {
 		bntevntList();
 		inpevntList();
 	} else {
+		//Html if cart is empty
 		cartGen.innerHTML = `<div class="text-center total p-5">
 					<h2>Cart Empty, Please add some item in cart</h2>
 				</div>`;
@@ -88,6 +90,7 @@ function removeCart(id) {
 	htmlgen();
 }
 
+//Adding Eventlistner to remove button
 function bntevntList() {
 	var cartbtn = document.getElementsByClassName("dark-btn");
 	for (let i = 0; i < cartbtn.length; i++) {
@@ -98,15 +101,17 @@ function bntevntList() {
 		});
 	}
 }
-
+//Adding Eventlistner to input field
 function inpevntList() {
 	const qtyip = document.getElementsByClassName("quantity");
 	for (let i = 0; i < qtyip.length; i++) {
 		var qty = qtyip[i];
 		qty.addEventListener("change", (e) => {
+			//Update cart only if the value of input field value is > 0
 			if (e.target.value > 0) {
 				updateCart(e.target.dataset.id, e.target.value);
 			} else {
+				//if input field value is < 0 thorw Invalid input error
 				document.getElementById("error").innerText = "Invalid input";
 			}
 		});

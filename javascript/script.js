@@ -1,3 +1,4 @@
+//Localstorage
 let cart;
 let ls = localStorage.getItem("cart");
 if (ls === null) {
@@ -6,6 +7,7 @@ if (ls === null) {
 	cart = JSON.parse(ls);
 }
 
+//Cart badge count
 function cartCount() {
 	document.getElementsByClassName("badge")[0].innerText = `(${cart.length})`;
 }

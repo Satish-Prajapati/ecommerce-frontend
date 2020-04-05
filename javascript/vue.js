@@ -57,7 +57,7 @@ Vue.component("productcomponent", {
 				<div class="card product-card p-1">
 					<img
 						class="card-img-top"
-						src="..../images/product/capri-nuvola/1.jpg"
+						src="../images/product/capri-nuvola/1.jpg"
 						alt=""
 					/>
 					<div class="card-body px-1">
