@@ -9,7 +9,7 @@ let cal = () => {
 
 //Function for generating cart html with all products details
 const htmlgen = () => {
-	let gen;
+	let gen = "";
 	let cartGen = document.getElementById("cartgen");
 	if (cart.length !== 0) {
 		cart.forEach((item) => {
